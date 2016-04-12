@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HYCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="show question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXZ-nZ-2Dq">
+                                <rect key="frame" x="229" y="20" width="143.5" height="26.5"/>
+                                <color key="backgroundColor" red="0.23920680136947381" green="0.34675085579246034" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fe8-f0-jra">
+                                <rect key="frame" x="234" y="84.5" width="133" height="39"/>
+                                <color key="backgroundColor" red="0.2237252188713561" green="0.32492157450843273" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.2392068014" green="0.34675085579999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="next question">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4UC-JB-qXn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RoR-zY-Dq8">
+                                <rect key="frame" x="284" y="531" width="33.5" height="26.5"/>
+                                <color key="backgroundColor" red="0.2392068014" green="0.34675085579999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CR9-OB-VyX">
+                                <rect key="frame" x="235" y="463.5" width="130" height="39"/>
+                                <color key="backgroundColor" red="0.22372521889999999" green="0.32492157449999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.2392068014" green="0.34675085579999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="show answer">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showanswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bjm-zW-X75"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CR9-OB-VyX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9tD-nL-8Vw"/>
+                            <constraint firstItem="Fe8-f0-jra" firstAttribute="top" secondItem="mXZ-nZ-2Dq" secondAttribute="bottom" constant="37.5" id="I2x-ZC-eno"/>
+                            <constraint firstItem="Fe8-f0-jra" firstAttribute="centerX" secondItem="mXZ-nZ-2Dq" secondAttribute="centerX" id="QeP-Sq-68K"/>
+                            <constraint firstItem="RoR-zY-Dq8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RDZ-VR-i8O"/>
+                            <constraint firstItem="mXZ-nZ-2Dq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="SIp-SZ-QLT"/>
+                            <constraint firstItem="CR9-OB-VyX" firstAttribute="top" secondItem="Fe8-f0-jra" secondAttribute="bottom" constant="340" id="ZNG-o0-h8H"/>
+                            <constraint firstItem="Fe8-f0-jra" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k0Y-Jh-JD0"/>
+                            <constraint firstItem="RoR-zY-Dq8" firstAttribute="top" secondItem="CR9-OB-VyX" secondAttribute="bottom" constant="29" id="kBw-M6-C3N"/>
+                            <constraint firstItem="RoR-zY-Dq8" firstAttribute="centerX" secondItem="mXZ-nZ-2Dq" secondAttribute="centerX" id="oFG-O8-HYv"/>
+                            <constraint firstItem="CR9-OB-VyX" firstAttribute="centerX" secondItem="mXZ-nZ-2Dq" secondAttribute="centerX" id="qPC-EI-dZe"/>
+                            <constraint firstItem="mXZ-nZ-2Dq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sg3-cC-MuZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLbl" destination="RoR-zY-Dq8" id="JYy-di-vNm"/>
+                        <outlet property="questionLbl" destination="mXZ-nZ-2Dq" id="hQt-48-uMr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="329"/>
+        </scene>
+    </scenes>
+</document>
